@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Build output (recreated by tools/deploy.sh)
+deploy/
+
+# Downloaded font cache (tools/make_images.py)
+tools/fonts/
+
+# Python
+__pycache__/
+*.pyc

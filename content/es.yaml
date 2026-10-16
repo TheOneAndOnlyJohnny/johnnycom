@@ -1,0 +1,227 @@
+# Contenido en español de johnny.com.mx
+#
+# Debe mantener la MISMA estructura que en.yaml: mismas claves, mismo número de
+# elementos en cada lista, mismo orden. Nombres, fechas y URLs están duplicados
+# a propósito, así que cámbialos en ambos archivos.
+#
+# Tips
+#   - Usa comillas ("...") si el valor empieza con [ { > | * & ! % @ ` o contiene ": " o " #".
+#   - Fechas: meses como AAAA-MM, días como AAAA-MM-DD.
+#   - Deja una URL vacía ("") para ocultar ese enlace; "#" la muestra como "pronto", sin enlace.
+#   - Colores y números de sección se asignan solos.
+#   - Corre `python3 tools/check_content.py` antes de subir.
+
+meta:
+  title: Johnny · Juan Guzmán        # título de la pestaña
+  lang: es
+  # resultados de búsqueda y vistas previas, máximo 160 caracteres
+  description: Juan “Johnny” Guzmán — Senior Engineering Manager en Capital One, Ciudad de México. Liderazgo de ingeniería, career ladders, contratación y apps cloud-native.
+
+identity:
+  firstName: Juan
+  lastName: Guzmán
+  alias: Johnny
+  handle: johnny                     # logo del header: ~/johnny
+  domain: johnny.com.mx
+  email: johnny@johnny.com.mx
+  role: Senior Engineering Manager
+  locationShort: CDMX, MX
+
+hero:
+  prompt:                            # solo la imagen para compartir (og-*.png): johnny@mx:~$ whoami
+    user: johnny@mx
+    command: whoami
+  line: Senior Engineering Manager en Capital One. Formo equipos de ingeniería, y también cocino y sé algo de programación.
+  ridgeTitle: Formo equipos de ingeniería increíbles.   # solo la imagen para compartir (og-*.png)
+  cursorHint: MUEVE EL CURSOR
+
+about:
+  summary: Formo equipos de ingeniería increíbles… Con experiencia liderando equipos para crear soluciones innovadoras. Historial comprobado en gestión de proyectos y experiencia técnica, impulsando el crecimiento del equipo y entregando resultados exitosos. También cocino y sé algo de programación.
+  facts:                             # etiqueta: valor (las etiquetas no pueden ser solo dígitos)
+    vivo en: Ciudad de México, MX
+    ahora: Capital One
+    estudié: Ciencias de la Computación, UdeG
+    hablo: Español · Inglés C1
+    desde: "2009"
+
+experience:                          # lo más reciente primero (empresas, y puestos dentro de cada una); deja `to` vacío en el puesto actual
+  - company: Capital One
+    color: '#d03027'  # color de marca: '#rrggbb' (entre comillas) o un nombre de Catppuccin como yellow, que sigue el tema
+    roles:
+      - role: Sr. Engineering Manager
+        from: 2024-05
+        to:
+        bullets:
+          - Como Sr Manager of Software Engineering en Capital One, lidero equipos de ingenieros muy talentosos que construyen y entregan aplicaciones web cloud-native con GoLang, Java, Angular, C#, NodeJs y AWS.
+
+  - company: Nimble Gravity
+    color: '#2e1a47'
+    roles:
+      - role: Engineering Manager
+        from: 2022-08
+        to: 2023-12
+        bullets:
+          - "Desarrollo profesional: implementé career ladders para las disciplinas de la empresa, sincronizando y alineando con clientes para que todo cuadrara con el menor impacto posible."
+          - Coaching a otros Jr Engineering Managers con 1:1s semanales, ayudándoles a mejorar comunicación, resolución de conflictos y habilidades de gestión, e implementar frameworks donde hiciera falta.
+
+  - company: Shopify
+    color: '#95bf47'
+    roles:
+      - role: Engineering Program Manager
+        from: 2021-11
+        to: 2022-07
+        bullets:
+          - Responsable de distintos programas e iniciativas; el día a día incluía evaluar e identificar riesgos, planear contingencias, apoyar en asignación y seguimiento de presupuesto, y alinear a los grupos involucrados, a veces de distintas unidades de negocio.
+
+  - company: Wizeline
+    color: '#e93d44'
+    roles:
+      - role: Sr. Engineering Manager / Líder de la disciplina de Software Engineering
+        from: 2020-01
+        to: 2021-11
+        bullets:
+          - "Responsable del proceso de contratación: identificar y ejecutar cambios generales o por proyecto según las necesidades, definir la descripción del rol de ingeniería y el skillset requerido, y ajustar el proceso a ese skillset."
+          - Ayudé a redefinir nuestro career ladder, una herramienta que explica las expectativas de comportamiento para ingenieros de todos los niveles, enfocada no solo en dominio técnico sino también en comunicación, visión emprendedora, liderazgo y más.
+          - Trabajé con un promedio de 43 a 52 reportes directos a la vez.
+
+      - role: Delivery Manager
+        from: 2018-08
+        to: 2019-12
+        bullets:
+          - "Mi responsabilidad principal era el éxito del proyecto: validación de alcance y SOW, composición del equipo, staffing, presupuesto, salud y dinámica del equipo."
+          - Lideré 11 proyectos con 9 clientes distintos y terminé 5; 3 de ellos tienen caso de estudio en el sitio de Wizeline (USC, Fitz Frames y TaxLab).
+          - A cargo de analizar requerimientos, elegir el equipo adecuado y asegurar que la estrategia fuera sólida. Identificar conflictos, bloqueos o detractores y actuar rápido para resolverlos o encontrar alternativas.
+
+      - role: Software Engineering Manager
+        from: 2018-05
+        to: 2018-08
+        bullets:
+          - Empecé gestionando a 13 personas en 4 proyectos; aunque fue poco tiempo, logré completar el primer release de uno de ellos.
+          - Totalmente hands-on en el proyecto de USC, ayudando con la funcionalidad de mapas, tanto en JavaScript como en la migración de CAD a GIS.
+
+  - company: Ooyala
+    color: yellow
+    roles:
+      - role: Software Engineering Manager
+        from: 2017-02
+        to: 2018-05
+        bullets:
+          - Tomé el equipo de seguridad de streams en estado crítico (50+ tickets abiertos) y en 2 meses lo bajé a 15 incidentes no críticos.
+          - Migré personalmente el portal de Resellers de infraestructura en servidores a una instancia Docker, ahorrando casi $3,000 USD al mes, para demostrar el valor de dejar la arquitectura monolítica y obtener la aprobación para desacoplar SAS (Stream Authorization System).
+          - Diseñé la nueva arquitectura de SAS, 100% orientada a microservicios y lista para integrarse no solo con Ooyala Backlot, sino también con Ooyala FLEX.
+
+      - role: Senior Software Engineer
+        from: 2015-10
+        to: 2017-02
+        bullets:
+          - Líder técnico del equipo de herramientas internas, a cargo del desarrollo y mantenimiento de herramientas nuevas y existentes.
+          - Renové el portal de resellers de Ooyala, migrándolo de una aplicación standalone a una instancia Docker, mejorando el rendimiento y reduciendo costos.
+          - Creé un dashboard de estado con datos de Datadog, Jira y Salesforce (alertas, tickets y reportes de clientes) para identificar sistemas con fallas y anticipar problemas.
+
+skills:
+  - title: Lenguajes y runtimes
+    items: [GoLang, Java, Python, Node, PHP]
+  - title: Plataforma e integración
+    items: [Docker, Mule ESB, AWS, Datadog]
+  - title: Stack del día a día
+    items: [Angular, "C#", NodeJs, GoLang, Java]
+  - title: Liderazgo
+    items: [Gestión de proyectos, Crecimiento profesional, Resolución de problemas, Trabajo en equipo, Pensamiento estratégico, Resolución de conflictos, Inteligencia emocional]
+
+projects:
+  subtitle: Lo que construyo fuera del trabajo.
+  items:
+    - title: Finsanity
+      year: 2026
+      description: "Una app de finanzas personales: presupuestos, metas de ahorro y salud financiera de un vistazo."
+      tags: [Go, Angular, PostgreSQL, AWS]
+      code: "#"                      # URL del repositorio ("#" = próximamente)
+      live: "#"                      # URL del demo
+      image: finsanity               # content/finsanity.jpg; corre tools/make_images.py al cambiarla
+      alt: "Banner de Finsanity: una alcancía, monedas y un teléfono con presupuestos y metas de ahorro."
+    - title: Juanderful
+      year: 2026
+      description: "Un sitio de reseñas de música, cine, series y restaurantes, con calificaciones y comentarios de la comunidad."
+      tags: [SvelteKit, TypeScript, PostgreSQL, Docker]
+      code: "#"
+      live: https://juanderful.mx
+      image: juanderful
+      alt: "Banner de Juanderful: el logo de destello lila y el nombre, etiquetas de música, cine, series y restaurantes, y una calificación de 4/5."
+
+blog:
+  url: https://blog.johnny.com.mx/       # url vacía = oculto
+
+now:
+  updated: Oct 2026
+  items:                             # etiqueta: texto
+    trabajo: Liderando equipos de ingeniería en Capital One, entregando apps cloud-native en AWS.
+    cocina: Lo que esté de temporada. Notas pronto.
+    construyo: Finsanity, una app de finanzas personales, y Juanderful, un sitio de reseñas de música, cine, series y restaurantes.
+    escribo: Arrancando un blog en blog.johnny.com.mx.
+
+fun:
+  subtitle: Lo que entra para que salga lo demás.
+  albums:
+    since: 2007-09-20                # el contador empieza aquí
+    input: music
+    output: inspiration
+    line: Un álbum nuevo cada día desde 2007.
+    meta: 1 / día
+  coffee:
+    since: 2009-01-01
+    perWorkday: 2
+    input: coffee
+    output: code
+    line: Dos tazas al día en días laborales desde 2009, y alguna que otra en días libres.
+    meta: últimas 26 semanas · 2 Lun–Vie · 1 a veces
+    workdays: días laborales
+
+contact:
+  title: Construyamos algo.
+  links:                             # url vacía = oculto
+    - label: GitHub
+      url: https://github.com/TheOneAndOnlyJohnny
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/theoneandonlyjohnny
+
+footer:
+  copyright: © 2026 Johnny · johnny.com.mx
+  credits: Iosevka · Catppuccin · three.js
+
+ui:
+  nav:
+    about: Sobre mí
+    experience: Experiencia
+    skills: Habilidades
+    projects: Proyectos
+    blog: "~/johnny/blog"
+    now: Ahora
+    fun: Cosas divertidas
+    contact: Contacto
+  dates:
+    present: Actual
+    now: hoy
+    year: a
+    month: m
+    months: [Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic]
+  projects:
+    screenshot: "[ captura ]"
+    code: código
+    live: demo
+    soon: pronto                     # junto a código/demo cuando la URL es "#"
+  email:
+    copy: copiar
+    copied: copiado ✓
+    toast: Correo copiado
+  palette:
+    placeholder: Escribe un comando o busca…
+    empty: Sin resultados.
+    navigate: navegar
+    run: ejecutar
+    goto: ir a
+    action: acción
+    backToTop: Volver arriba
+    switchLanguage: Switch to English
+    copyEmail: Copiar correo
+    lightTheme: Cambiar a tema claro
+    darkTheme: Cambiar a tema oscuro
