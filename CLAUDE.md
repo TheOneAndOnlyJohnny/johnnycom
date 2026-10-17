@@ -62,7 +62,7 @@ This is a static personal site, tracked in git (`origin`: https://github.com/The
 - `blog.johnny.com.mx`'s docroot is `public_html/blog`, so the root `.htaccess` applies to the blog too: the HTTPS redirect, the headers, the HTML CSP and the PHP block.
   - The `/blog` 301 is conditioned on the main host so it can't loop.
   - A blog engine that needs PHP or other origins needs its own `blog/.htaccess` overrides.
-- `blog/index.html` is a hand-written standalone placeholder. It has no bundle and no scripts, uses Latte, and the same font URLs as `make_images.FONTS`. `tools/test_blog.py` covers it, and it's deliberately not in the deploy `FILES`.
+- The blog's files live outside this repo; nothing here builds, tests or deploys them.
 - Any new file type needs a MIME type and caching rule.
 
 **Experience:** `experience[]` holds companies, each with its `roles[]`.

@@ -108,8 +108,7 @@ After an SEO-relevant change:
 ## Blog
 
 `blog.johnny.com.mx` is served from `public_html/blog` on the server. `johnny.com.mx/blog/*` 301s there.
-- **Placeholder:** for now `blog/index.html` is a static "coming soon" page: Latte, EN + ES, `noindex`, no scripts, and a link back.
-- **Deploy:** it's **not** in `deploy/`. Upload `blog/index.html` once into `public_html/blog/`, and replace it when the real blog arrives. Remove the `noindex` then.
+- **Source:** the blog lives outside this repo and is deployed separately; it's **not** in `deploy/`.
 - **Root `.htaccess`:** it also applies to the blog, including HTTPS, the headers, the CSP and the PHP block, so a PHP blog needs its own `blog/.htaccess`.
 
 ## `.htaccess` summary
