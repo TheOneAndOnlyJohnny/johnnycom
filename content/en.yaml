@@ -133,12 +133,12 @@ projects:
   items:
     - title: Finsanity
       year: 2026
-      description: "A personal finance app: budgets, savings goals and financial health at a glance."
-      tags: [Go, Angular, PostgreSQL, AWS]
+      description: "Personal finance by pay cycle: know what you can safely spend today, with bills, reserves and credit cards already accounted for."
+      tags: [SvelteKit, TypeScript, PostgreSQL, Bun]
       code: "#"                      # repository URL ("#" = coming soon)
-      live: "#"                      # demo URL
+      live: https://finsanity.mx       # demo URL
       image: finsanity               # content/finsanity.jpg; run tools/make_images.py after changing it
-      alt: "Finsanity banner: a piggy bank, coins and a phone showing budgets and savings goals."
+      alt: "Finsanity banner: the cyan ring logo and wordmark, and the formula income − bills − reserves = safe-to-spend."
     - title: Juanderful
       year: 2026
       description: "A review site for music, movies, TV and restaurants, with community ratings and comments."

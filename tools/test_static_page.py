@@ -113,7 +113,7 @@ class RenderTest(unittest.TestCase):
         self.assertIn('<a href="https://github.com/x/y" rel="noopener noreferrer">code</a>', page)
 
     def test_project_images_are_relative_to_each_page(self) -> None:
-        self.assertIn('<img src="img/projects/finsanity-1280.jpg" alt="Finsanity banner: a piggy bank', static_page.render(self.en, "en"))
+        self.assertIn('<img src="img/projects/finsanity-1280.jpg" alt="Finsanity banner: the cyan ring logo', static_page.render(self.en, "en"))
         self.assertIn('<img src="../img/projects/juanderful-1280.jpg" alt="Banner de Juanderful', static_page.render(self.es, "es"))
         self.assertTrue(static_page.PROJECT_IMAGE.format(slug="x").endswith(make_images.project_file_names("x")[-1].split("/")[-1]))
         del self.en["projects"]["items"][0]["image"]

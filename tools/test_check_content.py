@@ -173,7 +173,7 @@ class CheckLanguageTest(unittest.TestCase):
         self.assertEqual([(item["title"], item["year"], item["image"]) for item in items],
                          [("Finsanity", 2026, "finsanity"), ("Juanderful", 2026, "juanderful")])
         self.assertTrue(all(item["alt"] and item["code"] == "#" for item in items))
-        self.assertEqual([item["live"] for item in items], ["#", "https://juanderful.mx"])
+        self.assertEqual([item["live"] for item in items], ["https://finsanity.mx", "https://juanderful.mx"])
 
     def test_project_image_is_a_slug(self) -> None:
         for bad in ("Finsanity", "finsanity.jpg", "../x", "", 3):
